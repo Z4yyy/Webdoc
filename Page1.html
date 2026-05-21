@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Atlas — Une Expérience Immersive</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="StyleFinal.css">
+</head>
+<body>
+
+    <!-- ================================================================
+         NAVIGATION
+    ================================================================ -->
+    <nav class="custom-navbar">
+        <a href="Page-d'acceuil.html" class="navbar-brand">
+            <h1 class="navbar-title">Deux Cultures</h1>
+            <span class="navbar-subtitle">Deux Ambiances</span>
+        </a>
+        <ul class="navbar-menu">
+            <li><a href="#intro">Intro</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#temoignages">Témoignages</a></li>
+            <li><a href="#comparaison">Comparaison</a></li>
+            <li><a href="#ambiance">Ambiance</a></li>
+            <li><a href="#epilogue">Épilogue</a></li>
+        </ul>
+    </nav>
+
+    <!-- ================================================================
+         SECTION INTRO
+    ================================================================ -->
+    <section id="intro" class="custom-intro-dark-section">
+        <div class="intro-dark-body">
+
+            <div class="section-label">
+                <span class="section-label-line"></span>
+                <span class="section-label-text">Introduction</span>
+                <span class="section-label-line right"></span>
+            </div>
+
+            <div class="intro-dark-subtitle">
+                Deux récits <span class="bullet">•</span> Une même passion
+            </div>
+
+            <h1 class="intro-dark-title">Deux cultures, deux rythmes</h1>
+
+            <p class="intro-dark-text">
+                Chaque pays porte sa propre façon de vivre le café — un rituel intime ou un acte collectif, une pause solitaire ou une célébration du lien.
+            </p>
+
+        </div>
+    </section>
+
+    <!-- ================================================================
+         SECTION DESTINATIONS (SPLIT SCREEN)
+    ================================================================ -->
+    <section id="destinations">
+
+        <header class="main-header">
+            <span class="line"></span>
+            <h1>Choisissez une destination</h1>
+            <span class="line"></span>
+        </header>
+
+        <div class="intro-container">
+            <p>
+						Que vous soyez attiré par l'effervescence parfumée d'une ruelle de la médina <strong> en Tunisie </strong> ou par l'élégance feutrée d'un comptoir <strong> en France </strong>, installez-vous et laissez le temps suspendre son vol.
+						<strong> Quelle escale souhaitez-vous explorer maintenant ? </strong>
+						<em> Cliquez sur une image pour lancer le film et plonger au cœur de ces deux cultures.</em>
+            </p>
+        </div>
+
+        <main class="container">
+
+            <!-- TUNISIE -->
+            <section class="split left">
+                <div class="content">
+                    <span class="badge">تونس</span>
+                    <h2 class="title">Tunisie</h2>
+                    <p class="subtitle italic">L'effervescence de la Médina</p>
+                    <div class="cultural-ornament">✦</div>
+                    <div class="description">
+                        <p>Là où le temps ralentit et la conversation est le plat principal. Plongez dans la culture des cafés de la médina.</p>
+                        <a href="tunisie.html" class="btn">Entrer dans ce monde &rarr;</a>
+                    </div>
+                </div>
+                <div class="bg-layer base-img" style="background-image: url('https://images.unsplash.com/photo-1659100598044-819ec40bed8a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080');"></div>
+                <div class="bg-layer hover-img" style="background-image: url('https://c.animaapp.com/mo5qxx2vMDaZri/img/ai_2.png');"></div>
+            </section>
+
+            <div class="center-dial"></div>
+
+            <!-- FRANCE -->
+            <section class="split right">
+                <div class="content">
+                    <span class="badge">France</span>
+                    <h2 class="title">France</h2>
+                    <p class="subtitle italic">Entre comptoirs, bibliothèques et terrasses</p>
+                    <div class="cultural-ornament">⚜</div>
+                    <div class="description">
+                        <p>Découvrez l'art de vivre français, des cafés littéraires aux brasseries animées. Découvrez comment les cafés Français sont devenus les salons de la ville.</p>
+                        <a href="france.html" class="btn">Entrer dans ce monde &rarr;</a>
+                    </div>
+                </div>
+                <div class="bg-layer base-img" style="background-image: url('https://images.unsplash.com/photo-1770804661040-39cb2113eee3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080');"></div>
+                <div class="bg-layer hover-img" style="background-image: url('https://c.animaapp.com/mo5qxx2vMDaZri/img/ai_3.png');"></div>
+            </section>
+
+        </main>
+    </section>
+
+    <!-- ================================================================
+         SECTION TÉMOIGNAGES
+    ================================================================ -->
+    <section class="interview-intro" id="temoignages">
+        <span class="tag">Le témoignage</span>
+        <h2>Les Voix du Grain</h2>
+        <p class="intro-text">
+            Au-delà des arômes et de la vapeur, ce sont les récits qui infusent chaque tasse.
+            Nous avons parcouru les cafés de France et de Tunisie pour donner la parole à celles et ceux qui en façonnent l'âme, entre tradition et renouveau.
+        </p>
+    </section>
+
+    <section class="voices-section">
+        <div class="split-container">
+
+            <!-- Récits de Tunis -->
+            <article class="culture-column tunisie">
+                <h3 class="culture-title">Récits de Tunis</h3>
+                <div class="voices-grid">
+                    <div class="voice-card" data-video="hama.mov">
+                        <div class="image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1" alt="Mohamed">
+                            <div class="play-overlay"><span>Lecture</span></div>
+                        </div>
+                        <div class="card-info">
+                            <h4>Mohamed Zallouz</h4>
+                            <p>Barista — l'art de dompter le grain.</p>
+                        </div>
+                    </div>
+                    <div class="voice-card" data-video="Asma.mov">
+                        <div class="image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2" alt="Salma">
+                            <div class="play-overlay"><span>Lecture</span></div>
+                        </div>
+                        <div class="card-info">
+                            <h4>Asma Laarousi</h4>
+                            <p> Habituée des cafés — une jeunesse qui vibre au rythme de Tunis.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Échos de Paris -->
+            <article class="culture-column france">
+                <h3 class="culture-title">Échos de Paris</h3>
+                <div class="voices-grid">
+                    <div class="voice-card" data-video=Habitueesf.mov>
+                        <div class="image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12" alt="Jean-Pierre">
+                            <div class="play-overlay"><span>Lecture</span></div>
+                        </div>
+                        <div class="card-info">
+                            <h4>Marion</h4>
+                            <p>L'éternelle fidèle des terrasses toulousaines.</p>
+                        </div>
+                    </div>
+                    <div class="voice-card" data-video=BaristaF.mov>
+                        <div class="image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330" alt="Camille">
+                            <div class="play-overlay"><span>Lecture</span></div>
+                        </div>
+                        <div class="card-info">
+                            <h4>Camille R.</h4>
+                            <p>Le comptoir — sentinelles du lien social en France.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Modale vidéo témoignages -->
+    <div id="videoModal" class="video-modal">
+        <div class="video-container">
+            <span class="close">✕</span>
+            <video id="videoPlayer" controls></video>
+        </div>
+    </div>
+
+    <!-- ================================================================
+         SECTION COMPARAISON INTERACTIVE
+    ================================================================ -->
+    <section id="comparaison">
+
+        <div class="intro-temoignage">
+            <p class="subtitle-top">Culture &amp; Tradition</p>
+            <h1 class="titre-principal">Deux Rives, Une Même Passion</h1>
+            <p class="description">
+                Des rituels qui traversent les frontières.
+			Explorez les spécialités de café qui font l'identité de la Tunisie et de la France. 
+			Plus qu'une dégustation, une immersion dans les récits qui infusent chaque tasse.
+            </p>
+            <div class="action-container">
+                <span class="ligne-decor"></span>
+                <p class="appel-action">Explorez en cliquant sur les boissons</p>
+                <span class="ligne-decor"></span>
+            </div>
+        </div>
+
+        <div class="comparaison-global">
+
+            <!-- TUNISIE -->
+            <div class="video-container">
+                <h2 class="titre-pays">Tunisie</h2>
+                <video id="videoTunisie" autoplay loop muted playsinline>
+                    <source src="Fond1.mp4" type="video/mp4">
+                </video>
+                <div class="objet-interactif" style="top: 35%; left: 10%;" data-nom="Café Arbi (قهوة عربي)" data-desc="Préparé dans une Zazwa (cafetière en cuivre), c’est un café non filtré, infusé à partir d’une mouture extrêmement fine." data-img="CafeArabe.png">
+                    <img src="CafeArabe.png" alt="Café Arabe">
+                </div>
+                <div class="objet-interactif" style="top: 80%; left: 10%;" data-nom="Express" data-desc="Un expresso serré et intense, pour un coup de boost instantané." data-img="Express2.png">
+                    <img src="Express2.png" alt="Expresso">
+                </div>
+                <div class="objet-interactif" style="top: 40%; left: 90%;" data-nom="Cappuccino" data-desc="Le parfait équilibre entre l'intensité d'un expresso, une noissete de lait chaud et une mousse de lait veloutée." data-img="Cappucin.png">
+                    <img src="Cappucin.png" alt="Cappuccino">
+                </div>
+                <div class="objet-interactif" style="top: 80%; left: 90%;" data-nom="Café Glacé" data-desc="Une version rafraîchissante du café, très appréciée sur les terrasses tunisiennes pendant les journées ensoleillées." data-img="CafeGlacee.png">
+                    <img src="CafeGlacee.png" alt="Café Glacé">
+                </div>
+            </div>
+
+            <!-- FRANCE -->
+            <div class="video-container">
+                <h2 class="titre-pays">France</h2>
+                <video id="videoFrance" autoplay loop muted playsinline>
+                    <source src="FondFrance.mp4" type="video/mp4">
+                </video>
+                <div class="objet-interactif" style="top: 40%; left: 10%;" data-nom="Café au Lait" data-desc="Le grand classique du petit-déjeuner français, alliant la force du café à la douceur du lait chaud." data-img="CafeAuLait.png">
+                    <img src="CafeAuLait.png" alt="Café au Lait">
+                </div>
+                <div class="objet-interactif" style="top: 80%; left: 10%;" data-nom="Café Allongé" data-desc="Un expresso à la française à travers lequel on fait couler plus d'eau pour adoucir son amertume." data-img="Allonge.png">
+                    <img src="Allonge.png" alt="Café Allongé">
+                </div>
+                <div class="objet-interactif" style="top: 40%; left: 90%;" data-nom="Noisette" data-desc="Un expresso robuste surmonté d'un simple nuage de lait ou de mousse de lait, rappelant la couleur d'une noisette." data-img="Noisette.png">
+                    <img src="Noisette.png" alt="Café Noisette">
+                </div>
+                <div class="objet-interactif" style="top: 75%; left: 90%;" data-nom="Déca" data-desc="Le nouveau rituel urbain en France. Véritable phénomène sur les réseaux sociaux, il est devenu le « café contemporain » privilégié par les jeunes pour une pause esthétique et énergisante." data-img="Matcha.png">
+                    <img src="Matcha.png" alt="Matcha">
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Modale café interactif -->
+        <div id="maModale" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <img id="modalPhoto" src="" alt="Photo du café">
+                <h2 id="modalNom">Nom du Café</h2>
+                <p id="modalDescription">Description du café...</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ================================================================
+         SECTION AMBIANCE SONORE
+    ================================================================ -->
+    <section id="ambiance" class="container-global-ambiance">
+
+        <div class="audio-section-ambiance">
+            <span class="subtitle-top-ambiance">Ambiance sonore</span>
+            <h2 class="title-ambiance">Écouter l'ambiance</h2>
+            <div class="separator-ambiance"></div>
+            <p class="description-ambiance">Choisissez une rive. Laissez le bruissement des tasses et le murmure des terrasses vous transporter au-delà des frontières.</p>
+        </div>
+
+        <div id="surprise-element-ambiance" class="surprise-wrapper-ambiance">
+            <div class="cta-container-ambiance">
+                <span id="cta-text-ambiance" class="cta-text-large-ambiance">Titre CTA</span>
+                <svg class="cta-arrow-svg-ambiance" viewBox="0 0 50 20">
+                    <path d="M2,2 C15,18 35,18 45,10 M38,4 L46,9 L40,16" />
+                </svg>
+            </div>
+            <div class="objet-interactif-ambiance" onclick="openModalAmbiance()">
+                <img id="object-img-ambiance" src="imagesretournee.png" alt="Objet secret">
+            </div>
+        </div>
+
+        <div class="tabs-ambiance">
+            <button class="tab-btn-ambiance active" id="btn-tn-ambiance" onclick="changeRiveAmbiance('tn')">
+                <span>🇹🇳</span> Tunisie
+            </button>
+            <button class="tab-btn-ambiance" id="btn-fr-ambiance" onclick="changeRiveAmbiance('fr')">
+                <span>🇫🇷</span> France
+            </button>
+        </div>
+
+        <div class="player-card-ambiance" id="audio-card-ambiance">
+            <div class="player-title-ambiance">Sélectionnez une ambiance</div>
+            <div class="waveform-container-ambiance">
+                <div class="waveform-line-ambiance"></div>
+            </div>
+            <div class="player-controls-ambiance">
+                <button class="play-button-wrapper-ambiance" onclick="togglePlayAmbiance()">
+                    <div class="play-btn-ambiance">
+                        <svg id="play-icon-ambiance" viewBox="0 0 24 24">
+                            <path d="M8 5v14l11-7z"/>
+                        </svg>
+                        <svg id="pause-icon-ambiance" viewBox="0 0 24 24" style="display:none;">
+                            <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+                        </svg>
+                    </div>
+                    <span id="play-label-ambiance">Appuyez pour écouter</span>
+                </button>
+                <div class="volume-icon-ambiance">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                        <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modale ambiance -->
+        <div id="infoModal-ambiance" class="modal-ambiance">
+            <div class="modal-content-ambiance">
+                <span class="close-btn-ambiance" onclick="closeModalAmbiance()">&times;</span>
+                <img id="modalPhoto-ambiance" src="imagesretournee.png" alt="Illustration">
+                <h3 id="modalNom-ambiance">Titre</h3>
+                <p id="modalDescription-ambiance">Description...</p>
+            </div>
+        </div>
+
+        <div class="footer-ambiance">Deux rives · Une même passion</div>
+
+    </section>
+
+    <!-- ================================================================
+         SECTION ÉPILOGUE
+    ================================================================ -->
+    <section id="epilogue" class="custom-epilogue-section">
+        <div class="epilogue-body">
+            <span class="epilogue-subtitle">Épilogue</span>
+            <h1 class="epilogue-title">
+             Deux rives de la Méditerranée…<br>une même passion.
+            </h1>
+            <div class="epilogue-divider">
+                <span class="epilogue-line"></span>
+                <span class="epilogue-year">2026</span>
+                <span class="epilogue-line"></span>
+            </div>
+            <p class="epilogue-text">
+                Qu'il soit consommé sur une terrasse française ou dans un café en Tunisie, le café occupe une place centrale dans les deux cultures.
+								D'une rive à l'autre, cette boisson joue le même rôle : c'est un point de rencontre incontournable. Lieux de vie et d'échanges, ces espaces reflètent les habitudes sociales et le quotidien de chaque pays.
+								Au-delà des différences de préparation ou de décor, le café reste un rituel commun qui rassemble les gens, de la France à la Tunisie.
+								</p>
+        </div>
+    </section>
+
+    <!-- ================================================================
+         FOOTER
+    ================================================================ -->
+    <footer class="main-footer">
+        <p>Une expérience documentaire immersive — Café © 2026</p>
+    </footer>
+
+    <!-- ================================================================
+         SCRIPTS
+    ================================================================ -->
+
+    <!-- Script modale témoignages -->
+    <script>
+        const cards = document.querySelectorAll(".voice-card");
+        const videoModal = document.getElementById("videoModal");
+        const videoPlayer = document.getElementById("videoPlayer");
+        const closeBtn = document.querySelector(".close");
+
+        cards.forEach(card => {
+            card.addEventListener("click", () => {
+                videoPlayer.src = card.getAttribute("data-video");
+                videoModal.classList.add("active");
+                videoPlayer.play();
+            });
+        });
+
+        const closeVideoModal = () => {
+            videoModal.classList.remove("active");
+            videoPlayer.pause();
+            videoPlayer.src = "";
+        };
+
+        closeBtn.addEventListener("click", closeVideoModal);
+        videoModal.addEventListener("click", e => { if (e.target === videoModal) closeVideoModal(); });
+    </script>
+
+    <!-- Script principal (comparaison + ambiance) -->
+    <script src="scriptFinal.js"></script>
+
+</body>
+</html>

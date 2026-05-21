@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escale : Tunisie — Café Atlas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="Tunisie.css">
+</head>
+<body>
+
+    <nav>
+        <a href="Page1.html" class="nav-link">← Destinations</a>
+        <a href="Page1.html#temoignages" class="nav-link">Témoignages ↓</a>
+    </nav>
+
+    <header>
+        <div class="header-title-box">
+            <span style="display:block; margin-bottom: 1rem; color: var(--amber); letter-spacing: 0.3em; font-weight: bold; text-transform: uppercase; font-size: 0.8rem;">Escale 01</span>
+            <h1>Tunisie :<br><em>L'Infusion du Temps</em></h1>
+        </div>
+        <div class="header-text-box">
+            <p>Dans le dédale de la Médina comme sur les rives de Djerba, le café est le fil conducteur d'une vie sociale vibrante.</p>
+        </div>
+    </header>
+
+    <section class="video-container">
+        <div class="video-wrapper">
+            <video controls poster="https://images.unsplash.com/photo-1659100598044-819ec40bed8a?w=1600">
+                <source src="votre-video-tunisie.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    <section class="map-section-container">
+        <div class="split-container">
+            
+            <div id="map"></div>
+            
+            <div id="panel-droite">
+                <div id="instruction-message">
+                    <p>← Sélectionnez une escale sur la carte pour explorer ses récits et ses images.</p>
+                </div>
+                
+                <div id="contenu-escale" class="hidden">
+                    <h2 id="escale-titre">Titre de l'escale</h2>
+                    <p id="escale-texte">Texte de description...</p>
+                    
+                    <div id="escale-galerie" class="galerie-medias"></div>
+                </div>
+            </div>
+
+        </div>
+				<!-- HTML : Le bouton glissant -->
+<div class="slider-container">
+    <span class="slider-text">Entrez dans le monde de la france &gt;</span>
+    <div class="slider-handle" id="handle">→</div>
+    <input type="range" class="slider-input" id="slider" min="0" max="100" value="0">
+</div>
+<!-- JAVASCRIPT : Le comportement et le lien vers France.html -->
+<script>
+    (function() {
+        const slider = document.getElementById('slider');
+        const handle = document.getElementById('handle');
+        const container = document.querySelector('.slider-container');
+        
+        if (slider && handle && container) {
+            const maxScroll = container.clientWidth - handle.clientWidth - 10; 
+
+            slider.addEventListener('input', (e) => {
+                const value = e.target.value;
+                const translation = (value / 100) * maxScroll;
+                handle.style.transform = `translateX(${translation}px)`;
+            });
+
+            slider.addEventListener('change', (e) => {
+                if (e.target.value == 100) {
+                    // Redirection modifiée vers France.html
+                    window.location.href = "France.html"; 
+                } else {
+                    slider.value = 0;
+                    handle.style.transition = "transform 0.3s ease-out";
+                    handle.style.transform = "translateX(0px)";
+                    
+                    setTimeout(() => {
+                        handle.style.transition = "transform 0.1s linear";
+                    }, 300);
+                }
+            });
+        }
+    })();
+</script>
+    </section>
+
+    <footer>
+        <p>Les Cafés en Tunisie — Immersion Documentaire © 2026</p>
+    </footer>
+	
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="Tunisie.js"></script>
+		
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escale : France — Café Atlas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="France.css">
+</head>
+<body>
+
+    <nav>
+        <a href="Page1.html" class="nav-link">← Destinations</a>
+        <a href="Page1.html#temoignages" class="nav-link">Témoignages ↓</a>
+    </nav>
+
+    <header>
+        <div class="header-title-box">
+            <span style="display:block; margin-bottom: 1rem; color: var(--amber); letter-spacing: 0.3em; font-weight: bold; text-transform: uppercase; font-size: 0.8rem;">Escale 02</span>
+            <h1>France :<br><em>L'Esprit des Terrasses</em></h1>
+        </div>
+        <div class="header-text-box">
+            <p>Des grands boulevards parisiens aux places ensoleillées de Provence, la terrasse de café est le théâtre à ciel ouvert de la vie française.</p>
+        </div>
+    </header>
+
+    <section class="video-container">
+        <div class="video-wrapper">
+            <video controls poster="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1600">
+                <source src="votre-video-france.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    <section class="map-section-container">
+        <div class="split-container">
+            
+            <div id="map"></div>
+            
+            <div id="panel-droite">
+                <div id="instruction-message">
+                    <p>← Sélectionnez une escale sur la carte pour explorer ses récits et ses images.</p>
+                </div>
+                
+                <div id="contenu-escale" class="hidden">
+                    <h2 id="escale-titre">Titre de l'escale</h2>
+                    <p id="escale-texte">Texte de description...</p>
+                    
+                    <div id="escale-galerie" class="galerie-medias"></div>
+                </div>
+            </div>
+
+        </div>
+				<!-- HTML : Le bouton glissant plus large -->
+<div class="slider-container">
+    <span class="slider-text">Entrez dans le monde de la Tunisie &gt;</span>
+    <div class="slider-handle" id="handle">→</div>
+    <input type="range" class="slider-input" id="slider" min="0" max="100" value="0">
+</div>
+<!-- JAVASCRIPT : Gère la course plus longue automatiquement -->
+<script>
+    (function() {
+        const slider = document.getElementById('slider');
+        const handle = document.getElementById('handle');
+        const container = document.querySelector('.slider-container');
+        
+        if (slider && handle && container) {
+            // Le calcul de la distance maximale s'adapte tout seul à la nouvelle largeur (420px)
+            const maxScroll = container.clientWidth - handle.clientWidth - 10; 
+
+            slider.addEventListener('input', (e) => {
+                const value = e.target.value;
+                const translation = (value / 100) * maxScroll;
+                handle.style.transform = `translateX(${translation}px)`;
+            });
+
+            slider.addEventListener('change', (e) => {
+                if (e.target.value == 100) {
+                    window.location.href = "Tunisie.html"; 
+                } else {
+                    slider.value = 0;
+                    handle.style.transition = "transform 0.3s ease-out";
+                    handle.style.transform = "translateX(0px)";
+                    
+                    setTimeout(() => {
+                        handle.style.transition = "transform 0.1s linear";
+                    }, 300);
+                }
+            });
+        }
+    })();
+</script>
+    </section>
+
+    <footer>
+        <p>Les Cafés en France — Immersion Documentaire © 2026</p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="France.js"></script>
+</body>
+</html>
