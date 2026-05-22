@@ -80,8 +80,8 @@ ajouterEscale(
 // POINT 4 : TOZEUR
 ajouterEscale(
     33.9197, 8.1336,
-    "Tozeur & Les Oasis du Jérid",
-    "La majestueuse cité du désert, célèbre pour ses architectures uniques en briques d'argile couleur sable. Sa palmeraie immense et ses canyons environnants ouvrent les portes du grand Sahara.",
+    "Tozeur : L'Âme du Sahara",
+    "Au seuil du désert, le temps suspend son vol pour s’habiller d’ocre et d’argile. Sous la fraîcheur géométrique d'une pergola de palmes tressées, ces patios oasiens abritent le plus chaleureux des refuges. Qu'on s'installe face aux façades de briques traditionnelles baignées de soleil ou à l'ombre bienveillante des grandes arcades de terre, le rituel du café s'y vit en toute sérénité. Une escale intemporelle enveloppée de l'arôme du jasmin et des effluves de café noir, où chaque tasse révèle un fragment de l'âme du Sahara..",
     [
         `<img src="Tozeur.jpg" alt="Architecture Tozeur">`,
         `<img src="Tozeur2.jpg" alt="Architecture Tozeur">`,
@@ -92,12 +92,11 @@ ajouterEscale(
 // POINT 5 : DJERBA
 ajouterEscale(
     33.8075, 10.8451,
-    "L'Île de Djerba",
-    "Surnommée « Djerba la douce », cette île est un carrefour culturel harmonieux. Ses plages dorées, ses marchés et le musée à ciel ouvert de Djerbahood en font un espace unique au monde.",
-    [
-        `<img src="https://images.unsplash.com/photo-1590001155093-a3c66ab0c3ff?w=600" alt="Street art Djerbahood">`,
-        `<iframe width="100%" height="220" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>`,
-        `<img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600" alt="Plage Djerba">`
-    ]
+    "L'Île de Djerba : La Douceur du Sud",
+    "La vraie vie de Djerba se ressent dans ces trois cafés simples, calmes et colorés. On s'installe d'abord dans une cour fraîche et toute blanche, abritée par un toit en paille. On peut aussi choisir une table en fer forgé dans une ruelle pavée, juste à côté d'un grand mur peint en couleur. Enfin, on découvre un petit coin secret derrière une jolie porte d'un bleu éclatant. C'est l'endroit parfait pour s'asseoir sur des tapis traditionnels, boire son café tranquillement et profiter du vent de la mer.", [
+        `<img src="Djerba.jpg" alt="Djerbahood">`,
+        `<img src="Djerba2.jpg" alt="Djerbahood">`,
+        `<img src="Djerba3.jpg" alt="Djerbahood">`,
+]
 );
 

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="StyleFinal.css">
 </head>
 <body>
-
+<div id="yt-ambiance-tunisie" style="position: absolute; width: 0; height: 0; pointer-events: none; opacity: 0;"></div>
     <!-- ================================================================
          NAVIGATION
     ================================================================ -->
@@ -114,8 +114,8 @@
          SECTION TÉMOIGNAGES
     ================================================================ -->
     <section class="interview-intro" id="temoignages">
-        <span class="tag">Le témoignage</span>
-        <h2>Les Voix du Grain</h2>
+        <span class="tag">Le témoignage</span><h2 class="section-title">Les Voix du Café</h2>
+<p class="video-global-tip typing-animation">💡 Pour une expérience optimale, pensez à augmenter la qualité à 1080p sur le lecteur.</p>
         <p class="intro-text">
             Au-delà des arômes et de la vapeur, ce sont les récits qui infusent chaque tasse.
             Nous avons parcouru les cafés de France et de Tunisie pour donner la parole à celles et ceux qui en façonnent l'âme, entre tradition et renouveau.
@@ -129,7 +129,7 @@
             <article class="culture-column tunisie">
                 <h3 class="culture-title">Récits de Tunis</h3>
                 <div class="voices-grid">
-                    <div class="voice-card" data-video="hama.mov">
+                    <div class="voice-card" data-video="https://drive.google.com/file/d/16Tk9JJV4aQf91DrCeqZQRkGHWQLabAXj/preview">
                         <div class="image-wrapper">
                             <img src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1" alt="Mohamed">
                             <div class="play-overlay"><span>Lecture</span></div>
@@ -139,7 +139,7 @@
                             <p>Barista — l'art de dompter le grain.</p>
                         </div>
                     </div>
-                    <div class="voice-card" data-video="Asma.mov">
+                    <div class="voice-card" data-video="https://drive.google.com/file/d/1nnglQ49CCH4HEZsUh7x5vBfBOZuxGwmt/preview">
                         <div class="image-wrapper">
                             <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2" alt="Salma">
                             <div class="play-overlay"><span>Lecture</span></div>
@@ -156,7 +156,7 @@
             <article class="culture-column france">
                 <h3 class="culture-title">Échos de Paris</h3>
                 <div class="voices-grid">
-                    <div class="voice-card" data-video=Habitueesf.mov>
+                    <div class="voice-card" data-video=https://drive.google.com/file/d/17pFG6vtq0lD-KFp8YSKGuQtO7oF3RfJi/preview>
                         <div class="image-wrapper">
                             <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12" alt="Jean-Pierre">
                             <div class="play-overlay"><span>Lecture</span></div>
@@ -166,13 +166,13 @@
                             <p>L'éternelle fidèle des terrasses toulousaines.</p>
                         </div>
                     </div>
-                    <div class="voice-card" data-video=BaristaF.mov>
+                    <div class="voice-card" data-video=https://drive.google.com/file/d/16G0cptu9ZReaTzvoov-xocv7R0cVw8Cp/preview>
                         <div class="image-wrapper">
                             <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330" alt="Camille">
                             <div class="play-overlay"><span>Lecture</span></div>
                         </div>
                         <div class="card-info">
-                            <h4>Camille R.</h4>
+                            <h4>Les 4 Baristats </h4>
                             <p>Le comptoir — sentinelles du lien social en France.</p>
                         </div>
                     </div>
@@ -183,10 +183,10 @@
     </section>
 
     <!-- Modale vidéo témoignages -->
-    <div id="videoModal" class="video-modal">
-        <div class="video-container">
-            <span class="close">✕</span>
-            <video id="videoPlayer" controls></video>
+<div id="videoModal" class="video-modal">
+        <span class="close">&times;</span>
+        <div class="video-modal-content">
+            <iframe id="videoPlayer" src="" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
         </div>
     </div>
 
@@ -215,9 +215,9 @@
             <!-- TUNISIE -->
             <div class="video-container">
                 <h2 class="titre-pays">Tunisie</h2>
-                <video id="videoTunisie" autoplay loop muted playsinline>
-                    <source src="Fond1.mp4" type="video/mp4">
-                </video>
+<video id="videoTunisie" autoplay loop muted playsinline>
+    <source src="Fond1.mp4" type="video/mp4">
+</video>
                 <div class="objet-interactif" style="top: 35%; left: 10%;" data-nom="Café Arbi (قهوة عربي)" data-desc="Préparé dans une Zazwa (cafetière en cuivre), c’est un café non filtré, infusé à partir d’une mouture extrêmement fine." data-img="CafeArabe.png">
                     <img src="CafeArabe.png" alt="Café Arabe">
                 </div>
@@ -265,6 +265,9 @@
         </div>
 
     </section>
+
+
+    
 
     <!-- ================================================================
          SECTION AMBIANCE SONORE
@@ -371,9 +374,7 @@
     <!-- ================================================================
          SCRIPTS
     ================================================================ -->
-
-    <!-- Script modale témoignages -->
-    <script>
+<script>
         const cards = document.querySelectorAll(".voice-card");
         const videoModal = document.getElementById("videoModal");
         const videoPlayer = document.getElementById("videoPlayer");
@@ -381,21 +382,49 @@
 
         cards.forEach(card => {
             card.addEventListener("click", () => {
-                videoPlayer.src = card.getAttribute("data-video");
-                videoModal.classList.add("active");
-                videoPlayer.play();
+                const videoSrc = card.getAttribute("data-video");
+                
+                // On injecte simplement le lien /preview dans l'iframe
+                if (videoPlayer) {
+                    videoPlayer.src = videoSrc;
+                }
+                if (videoModal) {
+                    videoModal.classList.add("active");
+                }
             });
         });
 
         const closeVideoModal = () => {
-            videoModal.classList.remove("active");
-            videoPlayer.pause();
-            videoPlayer.src = "";
+            if (videoModal) {
+                videoModal.classList.remove("active");
+            }
+            if (videoPlayer) {
+                videoPlayer.src = ""; // Vide la source pour couper instantanément la vidéo et le son
+            }
         };
 
-        closeBtn.addEventListener("click", closeVideoModal);
-        videoModal.addEventListener("click", e => { if (e.target === videoModal) closeVideoModal(); });
+        if (closeBtn) {
+            closeBtn.addEventListener("click", closeVideoModal);
+        }
+        if (videoModal) {
+            videoModal.addEventListener("click", e => { 
+                if (e.target === videoModal) closeVideoModal(); 
+            });
+        }
+        
     </script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script>
+        let playerTunisie;
+        function onYouTubeIframeAPIReady() {
+            playerTunisie = new YT.Player('yt-ambiance-tunisie', {
+                height: '0',
+                width: '0',
+                videoId: 'f-u2Q3XefLE', // ID de votre lien Tunisie
+                playerVars: { 'autoplay': 0, 'loop': 1, 'playlist': 'f-u2Q3XefLE', 'controls': 0, 'showinfo': 0, 'rel': 0 }
+            });
+        }
+    </script
 
     <!-- Script principal (comparaison + ambiance) -->
     <script src="scriptFinal.js"></script>

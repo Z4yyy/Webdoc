@@ -1268,3 +1268,211 @@ body {
     .voices-section { padding: 1rem 1.5rem 3rem 1.5rem; }
     .custom-epilogue-section { padding: 4rem 2rem; }
 }
+
+
+/* ==========================================================================
+   DESIGN GRILLE COMPACTE ET SOMBRE DES CARACTÉRISTIQUES
+   ========================================================================== */
+.modal-caracteristiques { 
+    margin-top: 25px; 
+    padding-top: 20px; 
+    border-top: 1px solid rgba(212, 184, 150, 0.15);
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Structure 2:2 */
+    gap: 12px 18px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.modal-cara-row { 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    /* REMPLACEMENT : Teinte marron chaude et sombre au lieu du gris */
+    background: rgba(110, 64, 19, 0.696); 
+    padding: 12px 16px;
+    border-radius: 4px;
+    /* Optionnel : Une bordure marron très subtile pour souligner le bloc */
+    border: 1px solid rgba(122, 92, 62, 0.15); 
+}
+.modal-cara-icon { 
+    font-size: 15px; 
+    width: 32px; 
+    height: 32px; 
+    border: 1px solid var(--sand); 
+    border-radius: 50%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    background: rgba(0, 0, 0, 0.3); 
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.modal-cara-info { 
+    flex: 1; 
+    text-align: left; 
+    min-width: 0; 
+}
+
+.modal-cara-info h4 { 
+    font-family: var(--font-display);
+    font-size: 13.5px; 
+    color: var(--sand); 
+    margin: 0 0 2px 0; 
+    letter-spacing: 0.5px;
+}
+
+.modal-cara-info span { 
+    font-family: var(--font-body);
+    font-size: 12px; 
+    color: #a8a299; /* Crème assombri pour le contraste secondaire */
+    font-style: italic;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.modal-cara-bars { 
+    display: flex; 
+    gap: 3px; 
+    margin-top: 5px;
+}
+
+.modal-bar { 
+    width: 13px; 
+    height: 4px; 
+    background-color: rgba(255, 255, 255, 0.08); /* Barres vides très sombres */
+    border-radius: 1px; 
+}
+
+.modal-bar.active { 
+    background-color: var(--sand); /* Barres pleines couleur cuivre/or */
+}
+
+/* Responsive Mobile */
+@media (max-width: 550px) {
+    .modal-caracteristiques { 
+        grid-template-columns: 1fr; /* Repasse sur 1 colonne pour éviter d'être trop serré sur smartphone */
+        gap: 10px; 
+    }
+}
+
+/* ==========================================================================
+   CORRECTION RESOLUTION & RATIO MODALE VIDEO (SANS ROGNAGE)
+   ========================================================================== */
+.video-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85); /* Fond assombri élégant */
+    z-index: 2000;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Devient actif via le JS */
+.video-modal.active {
+    display: flex; 
+}
+
+/* ==========================================================================
+   CORRECTION TAILLE DYNAMIQUE INTERVIEWS (FORMAT VERTICAL FLUIDE)
+   ========================================================================== */
+.video-modal-content {
+    position: relative;
+    width: 90%;
+    /* Utilise l'aspect ratio standard d'un smartphone vertical (9:16) */
+    aspect-ratio: 9 / 16; 
+    /* Calcule la hauteur parfaite pour ne jamais dépasser l'écran */
+    height: 80vh;
+    max-width: calc(80vh * 9 / 16); 
+    
+    background: #000;
+    border-radius: 8px;
+    border: 1px solid rgba(212, 184, 150, 0.25);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ajustement de l'iframe interne */
+#videoPlayer {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}
+
+/* Ajustement de la croix de fermeture pour qu'elle soit bien visible en haut à droite */
+.video-modal .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: var(--cream, #ebe0d5);
+    font-size: 40px;
+    font-weight: 300;
+    cursor: pointer;
+    z-index: 2100;
+    transition: color 0.2s ease;
+}
+
+.video-modal .close:hover {
+    color: var(--sand, #d4b896);
+}
+.video-global-tip{
+    color :#503216;
+}
+
+/* Responsive : Si la vidéo est plutôt horizontale (format classique) */
+@media (min-width: 768px) and (orientation: landscape) {
+    .video-modal-content {
+        max-width: 800px; /* S'élargit si l'écran est grand pour s'adapter aux différents formats */
+        height: 70vh;
+    }
+
+
+/* ==========================================================================
+   ANIMATION MACHINE À ÉCRIRE PLUS LENTE ET VISIBLE (CORRIGÉE)
+   ========================================================================== */
+.typing-animation {
+    font-family: var(--font-label), serif;
+    font-size: 16px;              /* Légèrement agrandi pour la lisibilité */
+    font-weight: 700;             /* Écrit le texte bien en GRAS */
+    color: #a47c54;               /* Marron/cuivré plus foncé et plus soutenu que le sand d'origine */
+    text-align: center;
+    letter-spacing: 0.8px;
+    margin: 20px auto 35px auto;
+    font-style: italic;
+    opacity: 1;                   /* Opacité maximale pour être bien visible */
+    
+    /* Configuration de l'effet */
+    white-space: nowrap;          
+    overflow: hidden;             
+    border-right: 3px solid #a47c54; /* Curseur plus épais et assorti */
+    width: 0;                     
+    
+    /* TEMPS AUGMENTÉ : 6 secondes (au lieu de 3.5s) pour que ce soit plus lent */
+    animation: 
+        typing 6s steps(90, end) forwards,
+        blink-caret 0.75s step-end infinite;
+}
+
+/* Animation de révélation du texte */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; max-width: 720px; } /* Ajusté pour contenir tout le texte en gras sans couper */
+}
+
+/* Animation du clignotement du curseur */
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #a47c54; }
+}
+}
