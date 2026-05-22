@@ -45,12 +45,11 @@ function ajouterEscale(latitude, longitude, titre, texte, listeMedias) {
 // ESCALE 1 : PARIS (Les Cafés Littéraires)
 ajouterEscale(
     48.8546, 2.3344,
-    "Paris : Saint-Germain-des-Prés",
-    "Cœur battant de la vie intellectuelle et littéraire française. C'est aux terrasses du Café de Flore ou des Deux Magots que les écrivains, philosophes et artistes ont réécrit le monde autour d'un simple espresso noir.",
+    "Paris : Les Cocons Bohèmes",
+    "Envie de fuir l'agitation parisienne ? Poussez la porte de ces cafés au style bohème unique. Entre brocante et jungle urbaine, vous y découvrirez des mobiliers en bois brut dépareillés, de grandes plantes vertes et des décors vintages à souhait. Avec leurs poutres apparentes et leurs cafés d'origine inscrits à l'ardoise, ces cocons intimistes sont les adresses parfaites pour chiller avec une boisson chaude.",
     [
-        `<img src="https://images.unsplash.com/photo-1543968996-ee822b8176ba?w=600" alt="Café de Flore Paris">`,
-        `<img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=600" alt="Terrasse parisienne">`,
-        `<img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=600" alt="Ambiance Paris">`
+        '<img src="Paris.jpg" alt="Café Paris">', 
+        '<img src="Paris2.jpg" alt="Café Paris 2 ">'
     ]
 );
 
@@ -58,35 +57,30 @@ ajouterEscale(
 ajouterEscale(
     48.6481, -2.0075,
     "Saint-Malo & la Côte Émeraude",
-    "Dans les rudes cités corsaires ou sur les quais bretons, le café se boit chaud face aux vents d'ouest. Les bistrots maritimes y sont de véritables refuges chargés d'histoires de mer et de terre.",
-    [
-        `<img src="https://images.unsplash.com/photo-1511216113906-8f57bb83e776?w=600" alt="Côte Bretonne">`,
-        `<img src="https://images.unsplash.com/photo-1505881502353-a1986add3762?w=600" alt="Port de pêche">`,
-        `<img src="https://images.unsplash.com/photo-1569336415962-a4bd9f69cd83?w=600" alt="Phare en mer">`
+    "Dans les rudes cités corsaires ou le long des quais bretons, le café se boit chaud pour braver les vents d'ouest. Ces bistrots maritimes se révèlent être de véritables refuges chargés d'histoires, suspendus entre la terre et l'immensité de l'océan. D'un côté, on s'abrite derrière la splendeur lumineuse d'une immense verrière d'époque, où le bleu des vagues s'invite sur les tapis et où de grands globes de lumière éclairent des salons feutrés. De l'autre, on se love sur une terrasse en bois flotté, abritée par des toiles de navire, où les coussins colorés invitent à contempler l'horizon infini. Deux escales marines uniques, parfaites pour écouter le murmure des marées.", [
+        `<img src="Bretagne.jpg" alt="Côte Bretonne">`,
+        `<img src="Bretagne2.jpg" alt="Port de pêche">`
     ]
 );
 
 // ESCALE 3 : LYON (Bistrots et Bouchons)
 ajouterEscale(
     45.7640, 4.8357,
-    "Lyon : La Presqu'île",
-    "Capitale mondiale de la gastronomie. Entre deux 'mâchons' traditionnels, les comptoirs lyonnais et les bistrots de quartier incarnent l'art du bien-vivre, du partage et de la convivialité pure.",
+    "Lyon : Les Contrastes Chaleureux",
+    "Capitale mondiale de la gastronomie. Entre deux 'mâchons' traditionnels, ces refuges lyonnais réinventent l'art du bien-vivre et de la convivialité pure. D'un côté, le regard s'anime face à l'énergie d'un grand comptoir en bois brut, rythmé par des chaises d'école au jaune éclatant et un sol aux motifs graphiques. De l'autre, l'atmosphère se fait plus secrète, lovée sous une arche de pierre séculaire où des cascades d'ampoules suspendues diffusent une lueur dorée. Deux espaces, deux ambiances, mais une même invitation au partage et à la douceur d'une pause suspendue.",
     [
-        `<img src="https://images.unsplash.com/photo-1600683350284-88f5539fa9e1?w=600" alt="Vieux Lyon">`,
-        `<img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=600" alt="Intérieur de bistrot">`,
-        `<video controls src="videos/interview-lyon.mp4" poster="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600">Votre navigateur ne lit pas les vidéos.</video>`
+        `<img src="Lyon.jpg" alt="café lyon moderne">`,
+        `<img src="Lyon2.jpg" alt="café lyon">`
     ]
 );
 
 // ESCALE 4 : PROVENCE (Les Rives de la Méditerranée)
 ajouterEscale(
     43.5297, 5.4474,
-    "Aix-en-Provence : Le Cours Mirabeau",
-    "Ici, le temps s'arrête sous les platanes. Le rituel du café s'accompagne du chant des cigales et de la lumière dorée chère aux peintres. C'est l'épicentre de la douceur de vivre du Midi.",
-    [
-        `<img src="https://images.unsplash.com/photo-1565123409695-7b5ef63a2efb?w=600" alt="Terrasse en Provence">`,
-        `<img src="https://images.unsplash.com/photo-1505678261036-a3fcc5e884ee?w=600" alt="Champs de lavande">`,
-        `<img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=600" alt="Ruelle ensoleillée">`
+    "Aix-en-Provence : Les Ombres Dorées",
+    "Ici, le temps s'arrête sous la caresse du soleil de Provence. Accompagné du chant des cigales, le rituel du café se vit en terrasse, baigné par la lumière dorée chère aux artistes. Que vous choisissiez l'effervescence colorée d'une place historique aux tables jaune vif ou la fraîcheur intimiste d'une guinguette ombragée sous les arbres, ces adresses célèbrent l'art de vivre et la douceur pure du Midi.",
+    [    `<img src="AEP.jpg" alt="café aix en Provence">`,
+        `<img src="AEP2.jpg" alt="Café Aix en provence 2">`
     ]
 );
 
@@ -94,22 +88,20 @@ ajouterEscale(
 ajouterEscale(
     43.6047, 1.4442,
     "Toulouse : La Ville Rose",
-    "Sur la vibrante place du Capitole ou le long des berges de la Garonne, les terrasses toulousaines s'animent au rythme de la vie étudiante et de la douceur du Sud-Ouest. Un carrefour de rencontres incontournable où le café se prolonge souvent en fin de journée.",
+    "Sur la vibrante place du Capitole ou au cœur des charmantes places cachées comme celle de la Trinité, les terrasses toulousaines s’animent au rythme de la vie étudiante et de la douceur du Sud-Ouest. Portées par le prestige de leurs grandes arcades en briques roses ou bercées par le murmure d'une fontaine sculptée, ces escales incontournables invitent à suspendre le temps. Que ce soit sous les parasols blancs à l'heure du déjeuner ou baignés par les lumières dorées qui embrasent la brique dès la nuit tombée, chaque comptoir devient un carrefour de rencontres idéal où le café se prolonge joyeusement en fin de journée.",
     [
-        `<img src="https://images.unsplash.com/photo-1595115596483-faeb372a74c2?w=600" alt="Place du Capitole Toulouse">`,
-        `<img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600" alt="Ambiance bistrot Toulouse">`,
-        `<img src="https://images.unsplash.com/photo-1544644181-1484b3fdfc62?w=600" alt="Les berges de la Garonne">`
-    ]
+        `<img src="Toulouse.jpg" alt="Place du Capitole Toulouse">`,
+        `<img src="Toulouse2.jpg" alt="Place du Capitole Toulouse">`,
+       ]
 );
 
 // ESCALE 5 : BORDEAUX (Cafés et Vignobles)
 ajouterEscale(
     44.8378, -0.5792,
-    "Bordeaux : Place de la Comédie",
-    "Entre élégance architecturale du XVIIIe siècle et culture des grands crus. Les grands cafés de la place font écho au terroir mondialement réputé qui entoure la ville de la Garonne.",
-    [
-        `<img src="https://images.unsplash.com/photo-1590502593747-42a996133562?w=600" alt="Bordeaux Miroir d'eau">`,
-        `<iframe width="100%" height="220" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>`,
-        `<img src="https://images.unsplash.com/photo-1516550893923-42d28e5677af?w=600" alt="Vignoble bordelais">`
+    "Bordeaux : Les Terrasses Intemporelles",
+    "Entre l'élégance architecturale du XVIIIe siècle et la culture des grands crus, Bordeaux dévoile des terrasses au charme intemporel. Lovées au cœur des ruelles pavées, ces adresses incontournables font écho au terroir mondialement réputé de la cité de la Garonne. D'un côté, on s'installe au pied de la majestueuse Grosse Cloche pour une pause littéraire et feutrée en terrasse. De l'autre, on se laisse envoûter par la splendeur Art nouveau d'une façade historique illuminée, où les chaises en rotin invitent à prolonger la douceur des soirées bordelaises. Une véritable promesse de partage, de douceur et d'art de vivre.",
+     [    
+    `<img src="Bordeaux.jpg" alt="Bordeaux café 1">`,
+    `<img src="Bordeaux2.jpg" alt="Bordeaux café 2">`
     ]
 );

@@ -50,37 +50,31 @@ function ajouterEscale(latitude, longitude, titre, texte, listeMedias) {
 // TUNIS 1 : SIDI BOU SAÏD
 ajouterEscale(
     36.8702, 10.3414,
-    "Sidi Bou Saïd",
-    "Le célèbre village perché qui domine le golfe de Tunis. Ses façades blanchies à la chaux, ses moucharabiehs et ses portes d'un bleu azur intense en font un paradis pour les artistes.",
-    [
-        `<img src="https://images.unsplash.com/photo-1590001155093-a3c66ab0c3ff?w=600" alt="Sidi Bou Said">`,
-        `<img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?w=600" alt="Café des Délices">`,
-        `<img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?w=600" alt="Porte Bleue">`
-    ]
+    "Sidi Bou Saïd : Les Terrasses Azur",
+    "Sous le soleil éclatant ou dans la douceur des nuits méditerranéennes, le rituel du café à Sidi Bou Saïd est une ode à la sérénité. Flânant dans les ruelles pavées, on se laisse d'abord séduire par un petit comptoir de charme orné de mosaïques traditionnelles, parfait pour une pause à l'ombre d'une pergola en bois. Puis, l'invitation se prolonge sur les hauteurs de la falaise, où de vastes terrasses en gradins s'ouvrent sur l'immensité marine. Éclairé par les lumières de la côte et bercé par la brise nocturne, chaque espace devient un balcon suspendu au-dessus du vide, idéal pour savourer un café aux pignons à l'abri du monde.", [
+        `<img src="Sidi.jpg" alt="Sidi Bou Said">`,
+        `<img src="Sidi2.jpg" alt="Sidi Bou Said">`
+        ]
 );
 
 // TUNIS 2 : MEDINA ARBI
 ajouterEscale(
     36.8008, 10.1706,
     "La Médina de Tunis (Medina Arbi)",
-    "Un labyrinthe envoûtant de ruelles couvertes datant du VIIe siècle, classé au patrimoine mondial de l'UNESCO. C'est ici que bat le cœur traditionnel de la capitale entre les souks de parfums.",
-    [
-        `<img src="https://images.unsplash.com/photo-1527359443443-84a18a16df18?w=600" alt="Souk Médina">`,
-        `<img src="https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=600" alt="Artisanat">`,
-        `<img src="https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?w=600" alt="Patio Tunisien">`
+    "Passé le seuil des lourdes portes en bois clouté, l’agitation des souks s'efface pour laisser place à la fraîcheur mystique des voûtes de pierre millénaires. Dans ces refuges secrets, le temps semble suspendre sa course. À la lueur dorée et tamisée des lanternes ciselées, l'atmosphère se fait feutrée, presque sacrée. Le regard s'attarde sur le miroitement chaleureux des grands plateaux de cuivre et sur la géométrie délicate des faïences anciennes qui habillent les murs. Confortablement installé, on se laisse bercer par le murmure des conversations discrètes et le parfum envoûtant de la menthe fraîchement infusée. Une escale profondément magnétique, idéale pour savourer la douceur de vivre à l'abri du monde moderne.", [
+        `<img src="medina.jpg" alt="Medina">`,
+        `<img src="Medina2.jpeg" alt="Medina">`,
+        `<img src="Medina3.jpeg" alt="Medina">`
     ]
 );
 
 // TUNIS 3 : CARTHAGE
 ajouterEscale(
     36.8529, 10.3234,
-    "Les Ruines de Carthage",
-    "Ancienne superpuissance de la Méditerranée et rivale de Rome. Les thermes d'Antonin en bord de mer et les ports puniques témoignent de l'histoire grandiose de la cité.",
-    [
-        `<img src="https://images.unsplash.com/photo-1544644181-1484b3fdfc62?w=600" alt="Colonnes de Carthage">`,
-        `<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600" alt="Vue sur le golfe">`,
-        `<img src="https://images.unsplash.com/photo-1547234935-80c7145ec969?w=600" alt="Histoire antique">`
-    ]
+    "Carthage : Les Terrasses de l'Histoire",
+    "Sur la colline sacrée, face à l'immensité de la Méditerranée, le temps suspend son vol au cœur de Carthage. Ici, le rituel du café s’habille d'un bleu profond, écho éternel au ciel et à la mer qui fusionnent à l'horizon. Sous l'ombre bienveillante d'une pergola en bois blanchi par le sel, on s'installe face au spectacle de la côte illuminée et des silhouettes des bateaux qui glissent doucement. Le parfum du jasmin se mêle à la brise marine, tandis que la douce lueur des lanternes ciselées réchauffe l'atmosphère. Une escale contemplative et profondément sereine, où chaque tasse invite à savourer l'instant présent à l'abri des vents de l'histoire.",
+       [ `<img src="Carthage.jpg" alt="Colonnes de Carthage">`
+  ]
 );
 
 // POINT 4 : TOZEUR
@@ -89,9 +83,9 @@ ajouterEscale(
     "Tozeur & Les Oasis du Jérid",
     "La majestueuse cité du désert, célèbre pour ses architectures uniques en briques d'argile couleur sable. Sa palmeraie immense et ses canyons environnants ouvrent les portes du grand Sahara.",
     [
-        `<img src="https://images.unsplash.com/photo-1605809772861-1e1641049987?w=600" alt="Architecture Tozeur">`,
-        `<img src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?w=600" alt="Palmeraie">`,
-        `<video controls src="videos/interview-tozeur.mp4" poster="https://images.unsplash.com/photo-1547234935-80c7145ec969?w=600">Votre navigateur ne lit pas les vidéos.</video>`
+        `<img src="Tozeur.jpg" alt="Architecture Tozeur">`,
+        `<img src="Tozeur2.jpg" alt="Architecture Tozeur">`,
+              `<video controls src="tozeur.mp4" poster="Tozeur3.jpeg">Votre navigateur ne lit pas les vidéos.</video>`
     ]
 );
 
