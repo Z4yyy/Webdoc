@@ -67,7 +67,7 @@ ajouterEscale(
 ajouterEscale(
     45.7640, 4.8357,
     "Lyon : Les Contrastes Chaleureux",
-    "Capitale mondiale de la gastronomie. Entre deux 'mâchons' traditionnels, ces refuges lyonnais réinventent l'art du bien-vivre et de la convivialité pure. D'un côté, le regard s'anime face à l'énergie d'un grand comptoir en bois brut, rythmé par des chaises d'école au jaune éclatant et un sol aux motifs graphiques. De l'autre, l'atmosphère se fait plus secrète, lovée sous une arche de pierre séculaire où des cascades d'ampoules suspendues diffusent une lueur dorée. Deux espaces, deux ambiances, mais une même invitation au partage et à la douceur d'une pause suspendue.",
+    "Capitale mondiale de la gastronomie. Entre deux 'mâchons' traditionnels, ces refuges lyonnais réinventent l'art du bien-vivre et de la convivialité pure. D'un côté, le regard s'anime face à l'énergie d'un grand comptoir en bois brut, rythmé par des chaises d'école au jaune éclatant et un sol aux motifs graphiques. De l'autre, l'atmosphère se face plus secrète, lovée sous une arche de pierre séculaire où des cascades d'ampoules suspendues diffusent une lueur dorée. Deux espaces, deux ambiances, mais une même invitation au partage et à la douceur d'une pause suspendue.",
     [
         `<img src="Lyon.jpg" alt="café lyon moderne">`,
         `<img src="Lyon2.jpg" alt="café lyon">`
@@ -92,7 +92,7 @@ ajouterEscale(
     [
         `<img src="Toulouse.jpg" alt="Place du Capitole Toulouse">`,
         `<img src="Toulouse2.jpg" alt="Place du Capitole Toulouse">`,
-       ]
+    ]
 );
 
 // ESCALE 5 : BORDEAUX (Cafés et Vignobles)
@@ -100,8 +100,8 @@ ajouterEscale(
     44.8378, -0.5792,
     "Bordeaux : Les Terrasses Intemporelles",
     "Entre l'élégance architecturale du XVIIIe siècle et la culture des grands crus, Bordeaux dévoile des terrasses au charme intemporel. Lovées au cœur des ruelles pavées, ces adresses incontournables font écho au terroir mondialement réputé de la cité de la Garonne. D'un côté, on s'installe au pied de la majestueuse Grosse Cloche pour une pause littéraire et feutrée en terrasse. De l'autre, on se laisse envoûter par la splendeur Art nouveau d'une façade historique illuminée, où les chaises en rotin invitent à prolonger la douceur des soirées bordelaises. Une véritable promesse de partage, de douceur et d'art de vivre.",
-     [    
-    `<img src="Bordeaux.jpg" alt="Bordeaux café 1">`,
-    `<img src="Bordeaux2.jpg" alt="Bordeaux café 2">`
+    [    
+        `<img src="Bordeaux.jpg" alt="Bordeaux café 1">`,
+        `<img src="Bordeaux2.jpg" alt="Bordeaux café 2">`
     ]
 );
