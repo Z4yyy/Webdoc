@@ -24,13 +24,32 @@
             <p>Des grands boulevards parisiens aux places ensoleillées de Provence, la terrasse de café est le théâtre à ciel ouvert de la vie française.</p>
         </div>
     </header>
-
-    <section class="video-container">
-        <div class="video-wrapper">
-            <video controls poster="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1600">
-                <source src="votre-video-france.mp4" type="video/mp4">
-            </video>
+<section class="video-container">
+    <div class="video-wrapper" id="videoWrapper">
+        <iframe src="https://drive.google.com/file/d/19DOnCD0ekTG7cFi9t4gXrVYUlYi_8wO5/preview" class="video-iframe" allow="autoplay"></iframe>
+        
+        <div class="video-poster-overlay" id="videoPoster" style="background-image: url('https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1600');">
+            <div class="play-button-overlay">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M8 5v14l11-7z"/>
+                </svg>
+            </div>
         </div>
+    </div>
+</section>
+
+<script>
+    document.getElementById('videoPoster').addEventListener('click', function() {
+        // Cache la miniature
+        this.style.display = 'none';
+        // Récupère l'iframe pour lancer la vidéo (si autoplay est géré par l'iframe)
+        const iframe = document.querySelector('.video-iframe');
+        const src = iframe.src;
+        // Optionnel : force l'autoplay Google Drive au clic
+        iframe.src = src + (src.indexOf('?') > -1 ? '&' : '?') + 'autoplay=1';
+    });
+</script>
+    </section>
     </section>
 
     <section class="map-section-container">

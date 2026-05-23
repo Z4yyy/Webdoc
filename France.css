@@ -88,22 +88,86 @@ header {
     width: 100%; 
     padding: 0 4rem; 
     margin-bottom: 6rem; 
+}/* Conteneur et proportions 16:9 de la vidéo */
+
+
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Ratio cinéma stable */
+    height: 0;
+    overflow: hidden;
+    background-color: #000;
+    border-radius: 4px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
 
-.video-wrapper { 
-    position: relative; 
-    width: 100%; 
-    aspect-ratio: 21/9; 
-    background: #000; 
-    overflow: hidden; 
-    box-shadow: 0 40px 80px rgba(26,15,10,0.3); 
+.video-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
 }
 
-.video-wrapper video { 
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover; 
-    opacity: 0.85; 
+/* Style de l'overlay de la miniature */
+.video-poster-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    z-index: 10; /* Passe par-dessus l'iframe */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.4s ease;
+}
+
+/* Voile sombre esthétique sur la miniature pour faire ressortir le bouton */
+.video-poster-overlay::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease;
+}
+
+.video-poster-overlay:hover::before {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+/* Bouton Play circulaire épuré */
+.play-button-overlay {
+    position: relative;
+    z-index: 11;
+    width: 80px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.15);
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), background 0.3s;
+}
+
+.play-button-overlay svg {
+    width: 35px;
+    height: 35px;
+    color: #fff;
+    margin-left: 5px; /* Aligne visuellement le triangle au centre */
+}
+
+.video-poster-overlay:hover .play-button-overlay {
+    transform: scale(1.1);
+    background: rgba(255, 255, 255, 0.3);
 }
 
 /* ZONE CARTE INTERACTIVE SPLIT-SCREEN */
@@ -309,4 +373,37 @@ body {
     transition: transform 0.1s linear;
     box-shadow: 0 2px 5px rgba(0,0,0,0.3);
     z-index: 2; /* Placé juste sous l'input invisible */
+
+
+/* Le conteneur extérieur de la vidéo */
+.video-container {
+    width: 100%;
+    max-width: 1000px; /* Aligne la largeur max sur le style de ton site */
+    margin: 2rem auto; /* Centre le bloc global au milieu de la page */
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* Le wrapper qui force le bon ratio et le centrage */
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Ratio 16:9 magique */
+    height: 0;
+    overflow: hidden;
+    background-color: #000; /* Fond noir propre pendant le chargement */
+    border-radius: 4px; /* Un léger arrondi pour le côté design */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Ombre douce style premium */
+}
+
+/* L'iframe qui prend désormais 100% de la place disponible proprement */
+.video-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}
 }

@@ -1475,4 +1475,96 @@ body {
     from, to { border-color: transparent; }
     50% { border-color: #a47c54; }
 }
+
+/* Conteneur global */
+.coffee-particles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* ==========================================================
+   STYLE DES GRAINS DE CAFÉ (100% NETS)
+   ========================================================== */
+.coffee-particles .grain {
+    position: absolute;
+    bottom: -50px;
+    width: 26px;
+    height: 26px;
+    color: #2c1b10; /* Marron foncé torréfié intense */
+    opacity: 0;
+    animation: monterGrainNet 16s linear infinite;
+}
+
+/* Positions et vitesses différentes pour les grains */
+.coffee-particles .grain:nth-child(1) { left: 10%; animation-delay: 0s; animation-duration: 14s; transform: scale(0.8); }
+.coffee-particles .grain:nth-child(2) { left: 30%; animation-delay: 4s; animation-duration: 18s; transform: scale(1.1); }
+.coffee-particles .grain:nth-child(3) { left: 48%; animation-delay: 1.5s; animation-duration: 15s; transform: scale(0.9); }
+.coffee-particles .grain:nth-child(4) { left: 65%; animation-delay: 6s; animation-duration: 20s; transform: scale(1.2); }
+.coffee-particles .grain:nth-child(5) { left: 80%; animation-delay: 3s; animation-duration: 13s; transform: scale(0.7); }
+.coffee-particles .grain:nth-child(6) { left: 92%; animation-delay: 8s; animation-duration: 17s; transform: scale(1.0); }
+
+@keyframes monterGrainNet {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+    15% {
+        opacity: 0.18; /* Visibilité élégante en fond */
+    }
+    85% {
+        opacity: 0.18;
+    }
+    100% {
+        transform: translateY(-110vh) translateX(40px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* ==========================================================
+   STYLE DE LA VAPEUR / FUMÉE CHAUDE (FLAUE ET VOLATILE)
+   ========================================================== */
+.coffee-particles .vapeur {
+    position: absolute;
+    bottom: -100px;
+    width: 120px;
+    height: 120px;
+    background: radial-gradient(circle, rgba(245, 240, 230, 0.25) 0%, rgba(245, 240, 230, 0) 70%);
+    border-radius: 50%;
+    opacity: 0;
+    animation: monterVapeurChaude 10s ease-in-out infinite;
+}
+
+/* Positions et rythmes décalés pour la vapeur */
+.coffee-particles .vapeur:nth-of-type(1) { left: 20%; animation-delay: 0s; animation-duration: 9s; }
+.coffee-particles .vapeur:nth-of-type(2) { left: 40%; animation-delay: 3s; animation-duration: 11s; }
+.coffee-particles .vapeur:nth-of-type(3) { left: 55%; animation-delay: 1s; animation-duration: 8s; }
+.coffee-particles .vapeur:nth-of-type(4) { left: 75%; animation-delay: 5s; animation-duration: 12s; }
+.coffee-particles .vapeur:nth-of-type(5) { left: 85%; animation-delay: 2.5s; animation-duration: 10s; }
+
+@keyframes monterVapeurChaude {
+    0% {
+        transform: translateY(0) scale(0.7) translateX(0);
+        opacity: 0;
+        filter: blur(5px);
+    }
+    20% {
+        opacity: 0.35; /* La fumée est bien visible au début */
+    }
+    60% {
+        opacity: 0.20;
+        filter: blur(10px); /* Elle s'élargit et devient plus floue en montant */
+    }
+    100% {
+        transform: translateY(-110vh) scale(1.8) translateX(80px);
+        opacity: 0;
+        filter: blur(20px); /* Dissipation complète */
+    }
+}
+
 }
