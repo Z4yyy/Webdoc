@@ -205,7 +205,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const sonsAmbiance = {
     tn: "Tunisie.mp3", 
-    fr: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3"  
+    fr: "France.mp3"  
 };
 
 const infosPaysAmbiance = {
