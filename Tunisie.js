@@ -63,8 +63,8 @@ ajouterEscale(
     "La Médina de Tunis (Medina Arbi)",
     "Passé le seuil des lourdes portes en bois clouté, l’agitation des souks s'efface pour laisser place à la fraîcheur mystique des voûtes de pierre millénaires. Dans ces refuges secrets, le temps semble suspendre sa course. À la lueur dorée et tamisée des lanternes ciselées, l'atmosphère se fait feutrée, presque sacrée. Le regard s'attarde sur le miroitement chaleureux des grands plateaux de cuivre et sur la géométrie délicate des faïences anciennes qui habillent les murs. Confortablement installé, on se laisse bercer par le murmure des conversations discrètes et le parfum envoûtant de la menthe fraîchement infusée. Une escale profondément magnétique, idéale pour savourer la douceur de vivre à l'abri du monde moderne.", [
         `<img src="medina.jpg" alt="Medina">`,
-        `<img src="Medina2.jpeg" alt="Medina">`,
-        `<img src="Medina3.jpeg" alt="Medina">`
+        `<img src="medina2.jpeg" alt="Medina">`,
+        `<img src="medina3.jpeg" alt="Medina">`
     ]
 );
 
@@ -85,7 +85,7 @@ ajouterEscale(
     [
         `<img src="Tozeur.jpg" alt="Architecture Tozeur">`,
         `<img src="Tozeur2.jpg" alt="Architecture Tozeur">`,
-              `<video controls src="tozeur.mp4" poster="Tozeur3.jpeg">Votre navigateur ne lit pas les vidéos.</video>`
+              `<video controls src="Tozeur.mp4" poster="Tozeur3.jpeg">Votre navigateur ne lit pas les vidéos.</video>`
     ]
 );
 

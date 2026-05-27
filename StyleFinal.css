@@ -1437,7 +1437,7 @@ body {
         height: 70vh;
     }
 
-
+}
 /* ==========================================================================
    ANIMATION MACHINE À ÉCRIRE PLUS LENTE ET VISIBLE (CORRIGÉE)
    ========================================================================== */
@@ -1565,6 +1565,4 @@ body {
         opacity: 0;
         filter: blur(20px); /* Dissipation complète */
     }
-}
-
 }
